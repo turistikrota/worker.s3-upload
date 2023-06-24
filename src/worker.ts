@@ -50,6 +50,7 @@ export default {
 				httpMetadata: request.headers,
 			});
 			return new Response(null, {
+				status: 201,
 				headers: {
 					etag: object.httpEtag,
 				},
